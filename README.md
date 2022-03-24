@@ -1,6 +1,9 @@
-<h1 align="center">Hola! 👋, Somos Jonathan Betancur|Pablo Baez|Samuel Oviedo</h1>
-<h2 align="center">Estudiantes de lenguajes de programación de la Universidad EAFIT</h2>
-<h3 align="center">Este es nuestro proyecto!</h3>
+<h1 align="center">Hola! 👋, Somos:</h1>
+<h2 align="center">Jonathan Betancur</h2>
+<h2 align="center">Pablo Baez</h2>
+<h2 align="center">Samuel Oviedo</h2>
+<h3 align="center">Estudiantes de lenguajes de programación de la Universidad EAFIT</h3>
+<h4 align="center">Este es nuestro proyecto!</h4>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=pablobaezs&label=Profile%20views&color=0e75b6&style=flat" alt="pablobaezs" /> </p>
 
