@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
     int n;
-    cout<<"Escriba un número para el triángulo \n";
+    cout<<"Escriba un numero para el triangulo \n";
     cin>>(n);
     round(n);
     try{
