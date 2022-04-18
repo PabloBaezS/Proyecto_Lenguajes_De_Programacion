@@ -3,7 +3,7 @@ import dis
 
 def Matrices():
     print("____Introduzca el tamaño de cada matriz:____")
-    n = int(input())
+    n = 3
 
     # Crear matriz A
     A = []
