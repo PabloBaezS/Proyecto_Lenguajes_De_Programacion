@@ -1,0 +1,33 @@
+Function: main/0
+Constants: 10, 1, None
+Locals: x, y
+Globals: print
+BEGIN
+          LOAD_CONST                     0
+          STORE_FAST                     0
+          LOAD_FAST                      0
+          LOAD_CONST                     1
+          BINARY_SUBTRACT
+          STORE_FAST                     1
+          JUMP_ABSOLUTE                  condicional
+
+condicional:  LOAD_FAST                      0
+          LOAD_FAST                      1
+          BINARY_MULTIPLY
+          STORE_FAST                     0
+          LOAD_FAST                      1
+          LOAD_CONST                     1
+          BINARY_SUBTRACT
+          STORE_FAST                     1
+          LOAD_FAST                      1
+          LOAD_CONST                     1
+          COMPARE_OP                     2
+          POP_JUMP_IF_FALSE              condicional
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      0
+          CALL_FUNCTION                  1
+          POP_TOP
+          LOAD_CONST                     2
+          RETURN_VALUE
+        
+END
