@@ -1,0 +1,31 @@
+Function: sumapascal/1
+Constants: None,2,1,5
+Locals: n
+Globals: print
+
+BEGIN
+	LOAD_CONST               1 ;(2)
+	LOAD_FAST                0 ;(n)
+	BINARY_POWER
+	LOAD_CONST               2 ;(1)
+	BINARY_SUBTRACT
+	STORE_FAST               1 ;(suma)
+	LOAD_FAST                1 ;(suma)
+        RETURN_VALUE
+END
+
+Function: main/0
+Constants: None, 5
+Locals: n
+Globals: print, sumapascal
+BEGIN
+	LOAD_CONST               1
+	STORE_FAST               0
+	LOAD_GLOBAL              0
+	LOAD_GLOBAL		 1
+	LOAD_FAST                0
+	CALL_FUNCTION 		 1
+	POP_TOP
+	LOAD_CONST
+	RETURN_VALUE
+END
