@@ -1,0 +1,107 @@
+Function: main/0
+Constants: None, 7
+Globals: pascal
+BEGIN
+          LOAD_GLOBAL                    0
+          LOAD_CONST                     1
+          CALL_FUNCTION                  1
+          POP_TOP
+          LOAD_CONST                     0
+          RETURN_VALUE
+END
+
+Function: pascal/1
+Constants: None, 0, 1
+Locals: n, matriz, z, x, y
+Globals: range, append, print
+BEGIN
+          BUILD_LIST                     0
+          STORE_FAST                     1
+          LOAD_CONST                     1
+          STORE_FAST                     2
+          SETUP_LOOP               label02
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      0
+          CALL_FUNCTION                  1
+          GET_ITER
+label00:  FOR_ITER                 label01
+          STORE_FAST                     3
+          LOAD_FAST                      1
+          LOAD_ATTR                      1
+          BUILD_LIST                     0
+          CALL_FUNCTION                  1
+          POP_TOP
+          JUMP_ABSOLUTE            label00
+label01:  POP_BLOCK
+label02:  SETUP_LOOP               label10
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      0
+          CALL_FUNCTION                  1
+          GET_ITER
+label03:  FOR_ITER                 label09
+          STORE_FAST                     3
+          SETUP_LOOP               label08
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      3
+          LOAD_CONST                     2
+          BINARY_ADD
+          CALL_FUNCTION                  1
+          GET_ITER
+label04:  FOR_ITER                 label07
+          STORE_FAST                     4
+          LOAD_FAST                      4
+          LOAD_CONST                     1
+          COMPARE_OP                     2
+          POP_JUMP_IF_TRUE         label05
+          LOAD_FAST                      4
+          LOAD_FAST                      3
+          COMPARE_OP                     2
+          POP_JUMP_IF_FALSE        label06
+label05:  LOAD_FAST                      1
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_ATTR                      1
+          LOAD_CONST                     2
+          CALL_FUNCTION                  1
+          POP_TOP
+          JUMP_ABSOLUTE            label04
+label06:  LOAD_FAST                      1
+          LOAD_FAST                      3
+          LOAD_CONST                     2
+          BINARY_SUBTRACT
+          BINARY_SUBSCR
+          LOAD_FAST                      4
+          BINARY_SUBSCR
+          LOAD_FAST                      1
+          LOAD_FAST                      3
+          LOAD_CONST                     2
+          BINARY_SUBTRACT
+          BINARY_SUBSCR
+          LOAD_FAST                      4
+          LOAD_CONST                     2
+          BINARY_SUBTRACT
+          BINARY_SUBSCR
+          BINARY_ADD
+          STORE_FAST                     2
+          LOAD_FAST                      1
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_ATTR                      1
+          LOAD_FAST                      2
+          CALL_FUNCTION                  1
+          POP_TOP
+          JUMP_ABSOLUTE            label04
+label07:  POP_BLOCK
+label08:  JUMP_ABSOLUTE            label03
+label09:  POP_BLOCK
+label10:  LOAD_GLOBAL                    2
+          LOAD_FAST                      1
+          LOAD_FAST                      0
+          LOAD_CONST                     2
+          BINARY_SUBTRACT
+          BINARY_SUBSCR
+          CALL_FUNCTION                  1
+          POP_TOP
+          LOAD_CONST                     0
+          RETURN_VALUE
+END
