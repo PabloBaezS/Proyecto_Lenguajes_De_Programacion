@@ -1,0 +1,420 @@
+Function: main/0
+Constants: None, 2
+Locals: num
+Globals: Matrices
+BEGIN
+          LOAD_CONST                     1
+          STORE_FAST                     0
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      0
+          CALL_FUNCTION                  1
+          POP_TOP
+          LOAD_CONST                     0
+          RETURN_VALUE
+END
+Function: Matrices/1
+Constants: None, 0, 1, 2, 3, 4, 5, 8, 9, "__Suma de las matrices__", "__Resta de las matrices__", "__Multipicacion de las matrices__", "__Division de las matrices__", "__Get de la pos (1,0) de la matriz A__", "__Set de la pos (1,0) de la ma
+triz A por un 0__"
+Locals: num, n, A, i, B, RSuma, j, RResta, RMultiplicacion, RDivision
+Globals: range, append, print
+BEGIN
+          LOAD_FAST                      0
+          STORE_FAST                     1
+          BUILD_LIST                     0
+          STORE_FAST                     2
+          SETUP_LOOP               label02
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label00:  FOR_ITER                 label01
+          STORE_FAST                     3
+          LOAD_FAST                      2
+          LOAD_ATTR                      1
+          LOAD_CONST                     1
+          BUILD_LIST                     1
+          LOAD_FAST                      1
+          BINARY_MULTIPLY
+          CALL_FUNCTION                  1
+          POP_TOP
+          JUMP_ABSOLUTE            label00
+label01:  POP_BLOCK
+label02:  LOAD_CONST                     2
+          LOAD_FAST                      2
+          LOAD_CONST                     1
+          BINARY_SUBSCR
+          LOAD_CONST                     1
+          STORE_SUBSCR
+          LOAD_CONST                     3
+          LOAD_FAST                      2
+          LOAD_CONST                     1
+          BINARY_SUBSCR
+          LOAD_CONST                     2
+          STORE_SUBSCR
+          LOAD_CONST                     4
+          LOAD_FAST                      2
+          LOAD_CONST                     2
+          BINARY_SUBSCR
+          LOAD_CONST                     1
+          STORE_SUBSCR
+          LOAD_CONST                     5
+          LOAD_FAST                      2
+          LOAD_CONST                     2
+          BINARY_SUBSCR
+          LOAD_CONST                     2
+          STORE_SUBSCR
+          BUILD_LIST                     0
+          STORE_FAST                     4
+          SETUP_LOOP               label05
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label03:  FOR_ITER                 label04
+          STORE_FAST                     3
+          LOAD_FAST                      4
+          LOAD_ATTR                      1
+          LOAD_CONST                     1
+          BUILD_LIST                     1
+          LOAD_FAST                      1
+          BINARY_MULTIPLY
+          CALL_FUNCTION                  1
+          POP_TOP
+          JUMP_ABSOLUTE            label03
+label04:  POP_BLOCK
+label05:  LOAD_CONST                     6
+          LOAD_FAST                      4
+          LOAD_CONST                     1
+          BINARY_SUBSCR
+          LOAD_CONST                     1
+          STORE_SUBSCR
+          LOAD_CONST                     4
+          LOAD_FAST                      4
+          LOAD_CONST                     1
+          BINARY_SUBSCR
+          LOAD_CONST                     2
+          STORE_SUBSCR
+          LOAD_CONST                     7
+          LOAD_FAST                      4
+          LOAD_CONST                     2
+          BINARY_SUBSCR
+          LOAD_CONST                     1
+          STORE_SUBSCR
+          LOAD_CONST                     8
+          LOAD_FAST                      4
+          LOAD_CONST                     2
+          BINARY_SUBSCR
+          LOAD_CONST                     2
+          STORE_SUBSCR
+          LOAD_GLOBAL                    2
+          LOAD_CONST                     9
+          CALL_FUNCTION                  1
+          POP_TOP
+          BUILD_LIST                     0
+          STORE_FAST                     5
+          SETUP_LOOP               label08
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label06:  FOR_ITER                 label07
+          STORE_FAST                     3
+          LOAD_FAST                      5
+          LOAD_ATTR                      1
+          LOAD_CONST                     1
+          BUILD_LIST                     1
+          LOAD_FAST                      1
+          BINARY_MULTIPLY
+          CALL_FUNCTION                  1
+          POP_TOP
+          JUMP_ABSOLUTE            label06
+label07:  POP_BLOCK
+label08:  SETUP_LOOP               label14
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label09:  FOR_ITER                 label13
+          STORE_FAST                     3
+          SETUP_LOOP               label12
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label10:  FOR_ITER                 label11
+          STORE_FAST                     6
+          LOAD_FAST                      2
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_FAST                      6
+          BINARY_SUBSCR
+          LOAD_FAST                      4
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_FAST                      6
+          BINARY_SUBSCR
+          BINARY_ADD
+          LOAD_FAST                      5
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_FAST                      6
+          STORE_SUBSCR
+          JUMP_ABSOLUTE            label10
+label11:  POP_BLOCK
+label12:  JUMP_ABSOLUTE            label09
+label13:  POP_BLOCK
+label14:  SETUP_LOOP               label17
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label15:  FOR_ITER                 label16
+          STORE_FAST                     3
+          LOAD_GLOBAL                    2
+          LOAD_FAST                      5
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          CALL_FUNCTION                  1
+          POP_TOP
+          JUMP_ABSOLUTE            label15
+label16:  POP_BLOCK
+label17:  LOAD_GLOBAL                    2
+          LOAD_CONST                    10
+          CALL_FUNCTION                  1
+          POP_TOP
+          BUILD_LIST                     0
+          STORE_FAST                     7
+          SETUP_LOOP               label20
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label18:  FOR_ITER                 label19
+          STORE_FAST                     3
+          LOAD_FAST                      7
+          LOAD_ATTR                      1
+          LOAD_CONST                     1
+          BUILD_LIST                     1
+          LOAD_FAST                      1
+          BINARY_MULTIPLY
+          CALL_FUNCTION                  1
+          POP_TOP
+          JUMP_ABSOLUTE            label18
+label19:  POP_BLOCK
+label20:  SETUP_LOOP               label26
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label21:  FOR_ITER                 label25
+          STORE_FAST                     3
+          SETUP_LOOP               label24
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label22:  FOR_ITER                 label23
+          STORE_FAST                     6
+          LOAD_FAST                      2
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_FAST                      6
+          BINARY_SUBSCR
+          LOAD_FAST                      4
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_FAST                      6
+          BINARY_SUBSCR
+          BINARY_SUBTRACT
+          LOAD_FAST                      7
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_FAST                      6
+          STORE_SUBSCR
+          JUMP_ABSOLUTE            label22
+label23:  POP_BLOCK
+label24:  JUMP_ABSOLUTE            label21
+label25:  POP_BLOCK
+label26:  SETUP_LOOP               label29
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label27:  FOR_ITER                 label28
+          STORE_FAST                     3
+          LOAD_GLOBAL                    2
+          LOAD_FAST                      7
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          CALL_FUNCTION                  1
+          POP_TOP
+          JUMP_ABSOLUTE            label27
+label28:  POP_BLOCK
+label29:  LOAD_GLOBAL                    2
+          LOAD_CONST                    11
+          CALL_FUNCTION                  1
+          POP_TOP
+          BUILD_LIST                     0
+          STORE_FAST                     8
+          SETUP_LOOP               label32
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label30:  FOR_ITER                 label31
+          STORE_FAST                     3
+          LOAD_FAST                      8
+          LOAD_ATTR                      1
+          LOAD_CONST                     1
+          BUILD_LIST                     1
+          LOAD_FAST                      1
+          BINARY_MULTIPLY
+          CALL_FUNCTION                  1
+          POP_TOP
+          JUMP_ABSOLUTE            label30
+label31:  POP_BLOCK
+label32:  SETUP_LOOP               label35
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label33:  FOR_ITER                 label34
+          STORE_FAST                     6
+          LOAD_FAST                      2
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_FAST                      6
+          BINARY_SUBSCR
+          LOAD_FAST                      4
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_FAST                      6
+          BINARY_SUBSCR
+          BINARY_MULTIPLY
+          LOAD_FAST                      8
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_FAST                      6
+          STORE_SUBSCR
+          JUMP_ABSOLUTE            label33
+label34:  POP_BLOCK
+label35:  SETUP_LOOP               label38
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label36:  FOR_ITER                 label37
+          STORE_FAST                     3
+          LOAD_GLOBAL                    2
+          LOAD_FAST                      8
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          CALL_FUNCTION                  1
+          POP_TOP
+          JUMP_ABSOLUTE            label36
+label37:  POP_BLOCK
+label38:  LOAD_GLOBAL                    2
+          LOAD_CONST                    12
+          CALL_FUNCTION                  1
+          POP_TOP
+          BUILD_LIST                     0
+          STORE_FAST                     9
+          SETUP_LOOP               label41
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label39:  FOR_ITER                 label40
+          STORE_FAST                     3
+          LOAD_FAST                      9
+          LOAD_ATTR                      1
+          LOAD_CONST                     1
+          BUILD_LIST                     1
+          LOAD_FAST                      1
+          BINARY_MULTIPLY
+          CALL_FUNCTION                  1
+          POP_TOP
+          JUMP_ABSOLUTE            label39
+label40:  POP_BLOCK
+label41:  SETUP_LOOP               label47
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label42:  FOR_ITER                 label46
+          STORE_FAST                     3
+          SETUP_LOOP               label45
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label43:  FOR_ITER                 label44
+          STORE_FAST                     6
+          LOAD_FAST                      2
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_FAST                      6
+          BINARY_SUBSCR
+          LOAD_FAST                      4
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_FAST                      6
+          BINARY_SUBSCR
+          BINARY_TRUE_DIVIDE
+          LOAD_FAST                      9
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          LOAD_FAST                      6
+          STORE_SUBSCR
+          JUMP_ABSOLUTE            label43
+label44:  POP_BLOCK
+label45:  JUMP_ABSOLUTE            label42
+label46:  POP_BLOCK
+label47:  SETUP_LOOP               label50
+          LOAD_GLOBAL                    0
+          LOAD_FAST                      1
+          CALL_FUNCTION                  1
+          GET_ITER
+label48:  FOR_ITER                 label49
+          STORE_FAST                     3
+          LOAD_GLOBAL                    2
+          LOAD_FAST                      9
+          LOAD_FAST                      3
+          BINARY_SUBSCR
+          CALL_FUNCTION                  1
+          POP_TOP
+          JUMP_ABSOLUTE            label48
+label49:  POP_BLOCK
+label50:  LOAD_GLOBAL                    2
+          LOAD_CONST                    13
+          CALL_FUNCTION                  1
+          POP_TOP
+          LOAD_GLOBAL                    2
+          LOAD_FAST                      2
+          LOAD_CONST                     2
+          BINARY_SUBSCR
+          LOAD_CONST                     1
+          BINARY_SUBSCR
+          CALL_FUNCTION                  1
+          POP_TOP
+          LOAD_CONST                     1
+          LOAD_FAST                      2
+          LOAD_CONST                     2
+          BINARY_SUBSCR
+          LOAD_CONST                     1
+          STORE_SUBSCR
+          LOAD_GLOBAL                    2
+          LOAD_CONST                    14
+          CALL_FUNCTION                  1
+          POP_TOP
+          LOAD_GLOBAL                    2
+          LOAD_FAST                      2
+          LOAD_CONST                     2
+          BINARY_SUBSCR
+          LOAD_CONST                     1
+          BINARY_SUBSCR
+          CALL_FUNCTION                  1
+          POP_TOP
+          LOAD_CONST                     0
+          RETURN_VALUE
+END
